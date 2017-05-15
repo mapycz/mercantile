@@ -1,0 +1,37 @@
+Source: szn-python-mercantile
+Maintainer: Jiri Drbalek <jiri.drbalek@firma.seznam.cz>
+Uploaders: Jiri Drbalek <jiri.drbalek@firma.seznam.cz>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all,
+               python-setuptools,
+               python-click,
+               python-pytest,
+               python3-all,
+               python3-setuptools,
+               python3-click,
+               python3-pytest
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-grass/python-mapnik.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-grass/python-mapnik.git
+Homepage: https://github.com/mapnik/python-mapnik
+X-Python-Version: >= 2.7
+
+Package: szn-python-mercantile
+Architecture: any
+Depends: ${python:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Provides: ${python:Provides}
+Description: Spherical mercator tile and coordinate utilities 
+
+Package: szn-python3-mercantile
+Architecture: any
+Depends: ${python3:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Provides: ${python3:Provides}
+Description: Spherical mercator tile and coordinate utilities 
+
